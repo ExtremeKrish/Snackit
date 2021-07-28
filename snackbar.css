@@ -1,0 +1,44 @@
+#snackbar {
+    position:fixed;
+   left: 50%;
+    width:90%;
+    max-width:90%;
+    min-width:90%;
+    bottom:3%;
+    
+    background:#292929;
+    z-index:5;
+    border-radius:8px;
+    color:white;
+vertical-align:middle;
+display:inline-block;
+font-size:14px;
+font-weight:500;
+padding:18px;
+animation:snack 3s;
+display:none;
+transform: translate(-50%, 100px);
+
+    }
+         @media (max-width: 766px){
+         #snackbar{
+         width:85%;
+         max-width:85%;
+         min-width:85%;
+         }
+         }
+    @keyframes snack {
+    0%{
+    transform: translate(-50%, 100px);
+    }
+    15%{
+   transform: translate(-50%, 0px);
+    }
+    85%{
+   transform: translate(-50%, 0px);
+    }
+    100%{
+   transform: translate(-50%, 100px);
+    display:none;
+    }
+    }
